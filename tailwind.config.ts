@@ -7,7 +7,16 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'clr-peach': '#E7816B',
+        'clr-light-peach': '#FFAD9B',
+        'clr-black': '#1D1C1E',
+        'clr-dark-gray': '#333136',
+        'clr-light-gray': '#F1F3F5',
+        'clr-white': '#FFFFFF',
+      },
+    },
   },
   plugins: [],
 };
