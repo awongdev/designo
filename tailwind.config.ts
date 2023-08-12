@@ -16,6 +16,12 @@ const config: Config = {
         'clr-light-gray': '#F1F3F5',
         'clr-white': '#FFFFFF',
       },
+      letterSpacing: {
+        '2px': '0.125rem',
+      },
+      maxWidth: {
+        '1110': '69.375rem',
+      },
     },
   },
   plugins: [],

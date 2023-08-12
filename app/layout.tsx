@@ -1,13 +1,14 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Jost } from 'next/font/google';
+import Navigation from "@/components/Navigation";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Jost } from "next/font/google";
 
-const jost = Jost({ subsets: ['latin'] });
+const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Designo',
+  title: "Designo",
   description:
-    'With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.',
+    "With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <body className={jost.className}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
