@@ -5,26 +5,26 @@ const MobileNavigation = () => {
     <div className="md:hidden">
       <div className="bg-clr-black px-6 py-12">
         <ul className="inline-flex flex-col gap-8 text-2xl uppercase tracking-2px text-clr-white">
-          <li>
+          <li className="relative max-w-fit">
             <Link
               href="/our-company"
-              className="transition-colors duration-200 hover:text-clr-peach"
+              className="animate-underline after:bg-clr-white"
             >
               Our Company
             </Link>
           </li>
-          <li>
+          <li className="relative max-w-fit">
             <Link
               href="/locations"
-              className="transition-colors duration-200 hover:text-clr-peach"
+              className="animate-underline after:bg-clr-white"
             >
               Locations
             </Link>
           </li>
-          <li>
+          <li className="relative max-w-fit">
             <Link
               href="/contact"
-              className="transition-colors duration-200 hover:text-clr-peach"
+              className="animate-underline after:bg-clr-white"
             >
               Contact
             </Link>

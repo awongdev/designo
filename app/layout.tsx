@@ -1,7 +1,8 @@
-import Navigation from "@/components/Navigation";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
+import Navigation from "@/components/ui/Navigation";
+import Footer from "@/components/ui/Footer";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={jost.className}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
