@@ -1,26 +1,29 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'clr-peach': '#E7816B',
-        'clr-light-peach': '#FFAD9B',
-        'clr-black': '#1D1C1E',
-        'clr-dark-gray': '#333136',
-        'clr-light-gray': '#F1F3F5',
-        'clr-white': '#FFFFFF',
+        "clr-peach": "#E7816B",
+        "clr-light-peach": "#FFAD9B",
+        "clr-black": "#1D1C1E",
+        "clr-dark-gray": "#333136",
+        "clr-light-gray": "#F1F3F5",
+        "clr-white": "#FFFFFF",
       },
       letterSpacing: {
-        '2px': '0.125rem',
+        "2px": "0.125rem",
       },
       maxWidth: {
-        '1110': '69.375rem',
+        "1110": "69.375rem",
+      },
+      fontSize: {
+        "15px": "0.9375rem",
       },
     },
   },

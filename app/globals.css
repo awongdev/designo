@@ -6,4 +6,10 @@
   .animate-underline {
     @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:transition-all after:duration-300 after:hover:w-full;
   }
+  .header-text {
+    @apply text-[2rem] font-medium leading-[2.25rem] sm:text-5xl sm:leading-[3rem];
+  }
+  .header-content {
+    @apply text-15px font-normal leading-[1.563rem] sm:text-base;
+  }
 }
