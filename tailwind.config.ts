@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "475px",
+      },
       colors: {
         "clr-peach": "#E7816B",
         "clr-light-peach": "#FFAD9B",
