@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section>
       <div className="flex justify-center">
-        <div className="relative h-full min-h-[52.688rem] w-full max-w-1110 overflow-hidden bg-clr-peach sm:mx-6 sm:rounded-2xl lg:flex lg:min-h-[40rem] lg:items-center">
-          <div className="relative z-20 flex flex-col items-center px-6 pt-20 text-center text-clr-white md:pt-[3.75rem] lg:items-start lg:px-24 lg:text-left">
+        <div className="relative h-full min-h-[52.688rem] w-full max-w-1110 overflow-hidden bg-clr-peach sm:mx-6 sm:rounded-2xl md:mx-10 lg:flex lg:min-h-[40rem] lg:items-center">
+          <div className="relative z-20 flex flex-col items-center px-6 pt-20 text-center text-clr-white md:pt-[3.75rem] lg:items-start lg:px-24 lg:pt-0 lg:text-left">
             <h1 className="header-text mb-[0.875rem] max-w-sm sm:mb-6 sm:max-w-xl lg:mb-10">
               Award-winning custom designs and digital branding solutions
             </h1>
