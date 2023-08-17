@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import ViewDesign from "@/components/ViewDesign";
 import CoreValue from "@/components/home/CoreValue";
+import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <CallToAction />
     </>
   );
 }
