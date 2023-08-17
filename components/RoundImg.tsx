@@ -40,10 +40,10 @@ const categories = {
 };
 
 const directions = {
-  top: "90deg",
-  right: "180deg",
-  bottom: "270deg",
-  left: "0deg",
+  top: "rotate-[90deg]",
+  right: "rotate-[180deg]",
+  bottom: "rotate-[270deg]",
+  left: "rotate-[0deg]",
 };
 
 const RoundImg = ({ category, gradientDirection }: Props) => {
@@ -62,7 +62,7 @@ const RoundImg = ({ category, gradientDirection }: Props) => {
         alt=""
         width={202}
         height={202}
-        className={`rotate-[${directions[gradientDirection]}]`}
+        className={`${directions[gradientDirection]}`}
       />
     </div>
   );
