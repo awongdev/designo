@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        leaf: "url('/assets/shared/desktop/bg-pattern-leaf.svg')",
+      },
       screens: {
         xs: "475px",
       },

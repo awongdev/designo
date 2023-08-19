@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={jost.className}>
         <Navigation />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
