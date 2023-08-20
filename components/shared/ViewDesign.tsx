@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import RightArrow from "../public/assets/shared/desktop/icon-right-arrow.svg";
+import RightArrow from "/public/assets/shared/desktop/icon-right-arrow.svg";
 
 type DesignT = "webDesignSm" | "webDesignLg" | "appDesign" | "graphicDesign";
 

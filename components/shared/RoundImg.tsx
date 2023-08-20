@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-interface Props {
+type Props = {
   category:
     | "passionate"
     | "resourceful"
@@ -10,7 +10,7 @@ interface Props {
     | "australia"
     | "united-kingdom";
   gradientDirection: "top" | "right" | "bottom" | "left";
-}
+};
 
 const categories = {
   passionate: {

@@ -1,7 +1,7 @@
 import Hero from "@/components/home/Hero";
-import ViewDesign from "@/components/ViewDesign";
+import ViewDesign from "@/components/shared/ViewDesign";
 import CoreValue from "@/components/home/CoreValue";
-import CallToAction from "@/components/CallToAction";
+import CallToAction from "@/components/shared/CallToAction";
 
 export default function Home() {
   return (

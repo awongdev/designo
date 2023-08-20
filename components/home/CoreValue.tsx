@@ -1,9 +1,9 @@
-import RoundImg from "@/components/RoundImg";
+import RoundImg from "@/components/shared/RoundImg";
 
-interface Props {
+type Props = {
   value: "passionate" | "resourceful" | "friendly";
   direction: "top" | "bottom" | "right" | "left";
-}
+};
 
 const values = {
   passionate: {
