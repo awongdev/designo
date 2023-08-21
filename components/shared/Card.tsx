@@ -62,7 +62,7 @@ const Card = ({ project }: ProjectT) => {
           {currentProject.title}
         </h2>
         <p className="max-w-[17.313rem] text-clr-dark-gray group-hover:text-clr-white">
-          A multi-carrier shipping website for ecommerce businesses
+          {currentProject.content}
         </p>
       </div>
     </div>
