@@ -27,9 +27,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <CallToAction />
-      </section>
+      <CallToAction />
     </main>
   );
 }

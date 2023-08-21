@@ -12,4 +12,16 @@
   .header-content {
     @apply text-15px font-normal leading-[1.563rem] sm:text-base;
   }
+  .card-container {
+    @apply mx-6 mb-24 flex justify-center sm:mb-[7.5rem] md:mx-10 lg:mb-40;
+  }
+  .card-grid {
+    @apply grid w-full max-w-1110 gap-8 lg:grid-cols-3 lg:gap-x-[1.875rem] lg:gap-y-8;
+  }
+  .design-container {
+    @apply mx-6 mb-24 flex justify-center md:mx-10 md:mb-[7.5rem] lg:mb-40;
+  }
+  .design-grid {
+    @apply grid max-w-1110 gap-6 lg:grid-cols-2 lg:gap-[1.875rem];
+  }
 }
