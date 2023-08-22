@@ -1,7 +1,18 @@
 import Image from "next/image";
 
 type ProjectT = {
-  project: "express" | "transfer" | "photon" | "builder" | "blogr" | "camp";
+  project:
+    | "express"
+    | "transfer"
+    | "photon"
+    | "builder"
+    | "blogr"
+    | "camp"
+    | "airfilter"
+    | "eyecam"
+    | "faceit"
+    | "todo"
+    | "loopstudios";
 };
 
 const projects = {
@@ -43,6 +54,38 @@ const projects = {
       "Get expert training in coding, data, design, and digital marketing",
     alt: "Camp project design",
     img: "/assets/web-design/desktop/image-camp.jpg",
+  },
+  airfilter: {
+    title: "Airfilter",
+    content:
+      "Solving the problem of poor indoor air quality by filtering the air",
+    alt: "Airfilter app design",
+    img: "/assets/app-design/desktop/image-airfilter.jpg",
+  },
+  eyecam: {
+    title: "Eyecam",
+    content:
+      "Product that lets you edit your favorite photos and videos at any time",
+    alt: "Eyecam app design",
+    img: "/assets/app-design/desktop/image-eyecam.jpg",
+  },
+  faceit: {
+    title: "Faceit",
+    content: "Get to meet your favorite internet superstar with the faceit app",
+    alt: "Faceit app design",
+    img: "/assets/app-design/desktop/image-faceit.jpg",
+  },
+  todo: {
+    title: "Todo",
+    content: "A todo app that features cloud sync with light and dark mode",
+    alt: "Todo app design",
+    img: "/assets/app-design/desktop/image-todo.jpg",
+  },
+  loopstudios: {
+    title: "Loopstudios",
+    content: "A VR experience app made for Loopstudios",
+    alt: "Loopstudios app design",
+    img: "/assets/app-design/desktop/image-loopstudios.jpg",
   },
 };
 
