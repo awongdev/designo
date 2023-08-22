@@ -16,7 +16,7 @@
     @apply mx-6 mb-24 flex justify-center sm:mb-[7.5rem] md:mx-10 lg:mb-40;
   }
   .card-grid {
-    @apply grid w-full max-w-1110 gap-8 lg:grid-cols-3 lg:gap-x-[1.875rem] lg:gap-y-8;
+    @apply grid w-full max-w-1110 gap-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-1 md:gap-8 lg:grid-cols-3 lg:gap-x-[1.875rem] lg:gap-y-8;
   }
   .design-container {
     @apply mx-6 mb-24 flex justify-center md:mx-10 md:mb-[7.5rem] lg:mb-40;
