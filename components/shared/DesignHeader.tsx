@@ -49,12 +49,12 @@ const DesignHeader = ({ category }: CategoryT) => {
               alt=""
               width={876}
               height={584}
-              className={`absolute bottom-0 left-2/4 top-0 h-[36.5rem] w-[36.5rem] -translate-x-2/4 object-cover object-right md:left-auto md:right-0 md:top-2/4 md:w-[54.75rem] md:-translate-y-2/4 md:translate-x-0 md:object-left ${currentCategory.classes}`}
+              className={`pointer-events-none absolute bottom-0 left-2/4 top-0 h-[36.5rem] w-[36.5rem] -translate-x-2/4 object-cover object-right md:left-auto md:right-0 md:top-2/4 md:w-[54.75rem] md:-translate-y-2/4 md:translate-x-0 md:object-left ${currentCategory.classes}`}
             />
           </picture>
           <div className="relative z-10 flex flex-col items-center text-center text-clr-white">
-            <h1 className="header-text mb-6">{currentCategory.title}</h1>
-            <p className="header-content max-w-sm">{currentCategory.content}</p>
+            <h1 className="header-title mb-6">{currentCategory.title}</h1>
+            <p className="header-text max-w-sm">{currentCategory.content}</p>
           </div>
         </div>
       </div>

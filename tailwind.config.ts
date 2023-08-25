@@ -17,6 +17,7 @@ const config: Config = {
       colors: {
         "clr-peach": "#E7816B",
         "clr-light-peach": "#FFAD9B",
+        "clr-bg-peach": "#FDF3F0",
         "clr-black": "#1D1C1E",
         "clr-dark-gray": "#333136",
         "clr-light-gray": "#F1F3F5",

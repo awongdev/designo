@@ -30,11 +30,11 @@ const Card = ({ project }: ProjectT) => {
         height={620}
         className="h-full w-full"
       />
-      <div className="flex h-full w-full flex-col items-center justify-start bg-[#FDF3F0] px-[1.875rem] py-8 text-center transition-colors duration-300 group-hover:bg-clr-peach md:justify-center lg:justify-start">
+      <div className="flex h-full w-full flex-col items-center justify-start bg-clr-bg-peach px-[1.875rem] py-8 text-center transition-colors duration-300 group-hover:bg-clr-peach md:justify-center lg:justify-start">
         <h2 className="mb-4 text-[1.25rem] font-medium uppercase tracking-[5px] text-clr-peach group-hover:text-clr-white">
           {currentProject.title}
         </h2>
-        <p className="max-w-[17.313rem] text-clr-dark-gray group-hover:text-clr-white">
+        <p className="max-w-[17.313rem] group-hover:text-clr-white">
           {currentProject.content}
         </p>
       </div>

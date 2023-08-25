@@ -32,9 +32,7 @@ const CoreValue = ({ value, direction }: Props) => {
         <h2 className="text-xl font-medium uppercase tracking-[5px]">
           {currentValue.title}
         </h2>
-        <p className="max-w-md leading-6 text-clr-dark-gray md:max-w-md">
-          {currentValue.content}
-        </p>
+        <p className="max-w-md leading-6 md:max-w-md">{currentValue.content}</p>
       </div>
     </div>
   );

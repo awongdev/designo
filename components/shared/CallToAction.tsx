@@ -23,16 +23,16 @@ const CallToAction = () => {
             </picture>
             <div className="relative z-10 flex flex-col items-center px-6 py-16 text-center text-clr-white md:py-14 lg:flex-row lg:justify-between lg:px-[5.938rem] lg:py-[4.5rem] lg:text-left">
               <div className="flex flex-col items-center lg:items-start">
-                <h3 className="mb-5 text-[2rem] font-medium leading-9 md:max-w-xs md:text-[2.5rem] md:leading-10">
+                <h3 className="secondary-title mb-5 md:max-w-xs lg:leading-10">
                   Let’s talk about your project
                 </h3>
-                <p className="mb-8 text-15px leading-6 md:max-w-md md:text-base lg:mb-0">
+                <p className="secondary-text mb-8 sm:max-w-md lg:mb-0">
                   Ready to take it to the next level? Contact us today and find
                   out how our expertise can help your business grow.
                 </p>
               </div>
               <Link href="/contact">
-                <Button>Get in touch</Button>
+                <Button color="white">Get in touch</Button>
               </Link>
             </div>
           </div>

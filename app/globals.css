@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply text-clr-dark-gray;
+}
+
 @layer utilities {
   .animate-underline {
     @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:transition-all after:duration-300 after:hover:w-full;
   }
-  .header-text {
+  .header-title {
     @apply text-[2rem] font-medium leading-[2.25rem] sm:text-5xl sm:leading-[3rem];
   }
-  .header-content {
+  .header-text {
     @apply text-15px font-normal leading-[1.563rem] sm:text-base;
   }
   .card-container {
@@ -23,5 +27,11 @@
   }
   .design-grid {
     @apply grid max-w-1110 gap-6 lg:grid-cols-2 lg:gap-[1.875rem];
+  }
+  .secondary-title {
+    @apply text-[2rem] font-medium leading-9 sm:text-[2.5rem] sm:leading-[3rem];
+  }
+  .secondary-text {
+    @apply text-15px leading-6 sm:text-base;
   }
 }
