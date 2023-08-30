@@ -1,13 +1,15 @@
 import Image from "next/image";
 import { categories } from "@/constants/aboutInfo";
+import { imgGrayBlur } from "@/constants/imgGrayBlur";
 
 type CategoryT = { category: "talent" | "realDeal"; reverse?: boolean };
 
 const AboutCard = ({ category, reverse }: CategoryT) => {
   const currentCategory = categories[category];
+
   return (
     <section>
-      <div className="flex justify-center sm:mx-6 sm:mb-[7.5rem] md:mx-10 lg:mb-40">
+      <div className="mb-[7.5rem] flex justify-center sm:mx-6 md:mx-10 lg:mb-40">
         <div
           className={`flex w-full max-w-1110 flex-col sm:overflow-hidden sm:rounded-2xl ${
             reverse ? "lg:flex-row-reverse" : "lg:flex-row"
@@ -24,10 +26,12 @@ const AboutCard = ({ category, reverse }: CategoryT) => {
             />
             <Image
               src={currentCategory.img.mobile}
+              placeholder="blur"
+              blurDataURL={imgGrayBlur}
               width={1024}
               height={640}
               alt={currentCategory.alt}
-              className="max-h-[20rem] min-h-[20rem] object-cover object-top lg:max-h-[40rem] lg:max-w-[476px]"
+              className="h-full max-h-[20rem] min-h-[20rem] object-cover object-top lg:max-h-[40rem] lg:max-w-[476px]"
             />
           </picture>
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden bg-clr-bg-peach py-20">

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { imgGrayBlur } from "@/constants/imgGrayBlur";
 
-const Header = () => {
+const AboutHeader = () => {
   return (
     <header className="flex justify-center">
       <div className="flex w-full max-w-1110 flex-col-reverse overflow-hidden sm:mx-6 sm:mb-[7.5rem] sm:rounded-2xl md:mx-10 md:mb-40 lg:flex-row">
@@ -37,11 +38,14 @@ const Header = () => {
             media="(min-width: 40rem)"
           />
           <Image
-            src="/assets/about/desktop/image-about-hero.jpg"
+            priority
+            src={"/assets/about/desktop/image-about-hero.jpg"}
+            placeholder="blur"
+            blurDataURL={imgGrayBlur}
             alt="Workers at a table with laptops, notebooks, and plant"
             width={1110}
             height={790}
-            className="max-h-[20rem] object-cover lg:max-h-[30rem] lg:max-w-[29.75rem]"
+            className="h-full max-h-[20rem] object-cover lg:max-h-[30rem] lg:max-w-[29.75rem]"
           />
         </picture>
       </div>
@@ -49,4 +53,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AboutHeader;

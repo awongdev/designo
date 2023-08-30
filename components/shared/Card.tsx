@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { projects } from "@/constants/projects";
+import { imgGrayBlur } from "@/constants/imgGrayBlur";
 
 type ProjectT = {
   project:
@@ -26,6 +27,8 @@ const Card = ({ project }: ProjectT) => {
       <Image
         src={currentProject.img}
         alt={currentProject.alt}
+        placeholder="blur"
+        blurDataURL={imgGrayBlur}
         width={650}
         height={620}
         className="h-full w-full"

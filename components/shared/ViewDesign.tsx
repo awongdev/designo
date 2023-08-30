@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import RightArrow from "/public/assets/shared/desktop/icon-right-arrow.svg";
+import { imgGrayBlur } from "@/constants/imgGrayBlur";
 
 type DesignT = "webDesignSm" | "webDesignLg" | "appDesign" | "graphicDesign";
 
@@ -49,6 +50,8 @@ const ViewDesign = ({ design }: { design: DesignT }) => {
         <Image
           src={currentDesign.mobile}
           alt={currentDesign.alt}
+          blurDataURL={imgGrayBlur}
+          placeholder="blur"
           width={1024}
           height={640}
           className="h-full brightness-[.40]"
