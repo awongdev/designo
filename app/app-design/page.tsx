@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import CallToAction from "@/components/shared/CallToAction";
-import DesignHeader from "@/components/shared/DesignHeader";
-import Card from "@/components/shared/Card";
+import DesignHeader from "@/components/design/DesignHeader";
+import ProjectCard from "@/components/design/ProjectCard";
 import ViewDesign from "@/components/shared/ViewDesign";
 
 export const metadata: Metadata = {
@@ -17,11 +17,11 @@ export default function AppDesign() {
       <section>
         <div className="card-container">
           <div className="card-grid">
-            <Card project="airfilter" />
-            <Card project="eyecam" />
-            <Card project="faceit" />
-            <Card project="todo" />
-            <Card project="loopstudios" />
+            <ProjectCard project="airfilter" />
+            <ProjectCard project="eyecam" />
+            <ProjectCard project="faceit" />
+            <ProjectCard project="todo" />
+            <ProjectCard project="loopstudios" />
           </div>
         </div>
       </section>
