@@ -14,6 +14,10 @@ export default function WebDesign() {
   return (
     <main>
       <DesignHeader category="webDesign" />
+      <div
+        aria-hidden="true"
+        className="background-leaf before:bottom-[-19.125rem] before:left-[-10.313rem]"
+      ></div>
       <section>
         <div className="card-container">
           <div className="card-grid">

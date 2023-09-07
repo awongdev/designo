@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import RightArrow from "/public/assets/shared/desktop/icon-right-arrow.svg";
 import { imgGrayBlur } from "@/constants/imgGrayBlur";
 
@@ -41,6 +42,7 @@ const categories = {
 };
 
 const ViewDesign = ({ design }: { design: DesignT }) => {
+  const router = useRouter();
   const currentDesign = categories[design];
   return (
     <div className="relative max-w-fit overflow-hidden rounded-2xl">
@@ -63,13 +65,14 @@ const ViewDesign = ({ design }: { design: DesignT }) => {
             {currentDesign.title}
           </h2>
           <div className="relative">
-            <Link
-              href={currentDesign.href}
-              className="animate-underline mx-auto flex max-w-fit items-center text-15px font-medium tracking-[5px] after:bg-clr-white"
+            <button
+              type="button"
+              onClick={() => router.push(currentDesign.href)}
+              className="animate-underline mx-auto flex max-w-fit items-center text-15px font-medium uppercase tracking-[5px] after:bg-clr-white"
             >
               View Projects
               <RightArrow className="ml-4" />
-            </Link>
+            </button>
           </div>
         </div>
       </div>

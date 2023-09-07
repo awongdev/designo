@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Button from "../ui/Button";
 import { formInputs } from "@/constants/formInputs";
 import ErrorIcon from "@/public/assets/contact/desktop/icon-error.svg";
 import { useForm } from "react-hook-form";
@@ -47,9 +46,9 @@ const ContactForm = () => {
       <div className="relative mb-[7.5rem] w-full max-w-1110 overflow-hidden bg-clr-peach sm:mx-6 sm:rounded-2xl md:mx-10 lg:mb-40">
         <div className="relative z-10 flex flex-col gap-12 px-6 py-[4.5rem] sm:px-[3.75rem] lg:flex-row lg:items-center lg:justify-between lg:px-24 lg:py-14">
           <div className="flex flex-col items-center text-center sm:items-start sm:text-start">
-            <h1 className="header-title mb-6 text-clr-white sm:mb-8">
+            <h2 className="header-title mb-6 text-clr-white sm:mb-8">
               Contact Us
-            </h1>
+            </h2>
             <p className="header-text max-w-xl text-clr-white lg:max-w-md">
               Ready to take it to the next level? Let’s talk about your project
               or idea and find out how we can help your business grow. If you
@@ -106,8 +105,11 @@ const ContactForm = () => {
                 </p>
               )}
             </div>
-            <button className="float-right mt-6 w-full max-w-[9.5rem]">
-              <Button color="white">Submit</Button>
+            <button
+              type="submit"
+              className="btn btn-white float-right mt-6 w-full max-w-[9.5rem]"
+            >
+              Submit
             </button>
           </form>
         </div>
@@ -122,7 +124,7 @@ const ContactForm = () => {
             alt=""
             width={584}
             height={292}
-            className="absolute bottom-0 left-2/4 top-0 h-[18.25rem] w-[36.5rem] -translate-x-2/4 object-cover sm:left-[-122px] sm:top-[-83px] sm:h-[640px] sm:w-[640px] sm:translate-x-0 sm:object-right lg:bottom-0 lg:left-0 lg:top-auto"
+            className="absolute bottom-0 left-2/4 top-0 h-[18.25rem] w-[36.5rem] -translate-x-2/4 object-cover sm:left-[-7.625rem] sm:top-[-5.188rem] sm:h-[40rem] sm:w-[40rem] sm:translate-x-0 sm:object-right lg:bottom-0 lg:left-0 lg:top-auto"
           />
         </picture>
       </div>

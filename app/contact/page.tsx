@@ -10,9 +10,14 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <main className="relative">
+    <main className="overflow-hidden">
+      <h1 className="sr-only">Contact Us</h1>
       <ContactForm />
       <Countries />
+      <div
+        aria-hidden="true"
+        className="background-leaf before:bottom-[-10rem] before:right-[-10.313rem]"
+      ></div>
     </main>
   );
 }

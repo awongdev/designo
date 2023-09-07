@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function Locations() {
   return (
     <main>
+      <h1 className="sr-only">Locations</h1>
       <section className="mb-[7.5rem] grid gap-10 sm:gap-[7.5rem] lg:mb-40 lg:gap-8">
         <LocationCard location="canada" />
         <LocationCard location="australia" reverse={true} />

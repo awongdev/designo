@@ -11,31 +11,31 @@ const socialIcons = [
   {
     id: 0,
     Icon: FacebookIcon,
-    alt: "Facebook icon",
+    alt: "Facebook",
     href: "https://www.facebook.com/",
   },
   {
     id: 1,
     Icon: YoutubeIcon,
-    alt: "Youtube icon",
+    alt: "Youtube",
     href: "https://www.youtube.com/",
   },
   {
     id: 2,
     Icon: TwitterIcon,
-    alt: "Twitter icon",
+    alt: "Twitter",
     href: "https://twitter.com/",
   },
   {
     id: 3,
     Icon: PinterestIcon,
-    alt: "Pinterest icon",
+    alt: "Pinterest",
     href: "https://www.pinterest.com/",
   },
   {
     id: 4,
     Icon: InstagramIcon,
-    alt: "Instagram icon",
+    alt: "Instagram",
     href: "https://www.instagram.com/",
   },
 ];
@@ -86,20 +86,22 @@ const Footer = () => {
           </div>
           <div className="flex w-full flex-col gap-10 md:flex-row md:items-end md:justify-between">
             <div className="flex flex-col gap-10 md:flex-row md:gap-14 lg:gap-52">
-              <div className="text-center leading-[1.625rem] text-clr-white/50 md:text-left">
-                <p className="font-bold">Designo Central Office</p>
-                <p>3886 Wellington Street</p>
-                <p>Toronto, Ontario M9C 3J5</p>
-              </div>
-              <div className="text-center leading-[1.625rem] text-clr-white/50 md:text-left">
-                <p className="font-bold">Contact Us (Central Office)</p>
-                <p>P : +1 253-863-8967</p>
-                <p>M : contact@designo.co</p>
-              </div>
+              <address className="whitespace-pre-line text-center not-italic leading-[1.625rem] text-clr-white/50 md:text-left">
+                <span className="block font-bold">Designo Central Office</span>
+                {`3886 Wellington Street
+              Toronto, Ontario M9C 3J5`}
+              </address>
+              <address className="whitespace-pre-line text-center not-italic leading-[1.625rem] text-clr-white/50 md:text-left">
+                <span className="block font-bold">
+                  Contact Us (Central Office)
+                </span>
+                {`P : +1 253-863-8967
+              M : contact@designo.co`}
+              </address>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4">
               {socialIcons.map(({ id, alt, Icon, href }) => (
-                <Link href={href} key={id}>
+                <Link href={href} key={id} aria-label={alt}>
                   <Icon
                     alt={alt}
                     className="fill-current text-clr-peach transition-colors duration-300 hover:text-clr-light-peach"

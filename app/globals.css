@@ -34,4 +34,16 @@ html {
   .secondary-text {
     @apply text-15px leading-6 sm:text-base;
   }
+  .background-leaf {
+    @apply relative z-[-2] mx-auto hidden max-w-1110 before:absolute before:h-[37.125rem] before:w-[62.875rem] before:bg-leaf before:bg-no-repeat lg:block;
+  }
+  .btn {
+    @apply rounded-lg px-6 py-4 text-[0.938rem] font-medium uppercase tracking-[1px] transition-colors duration-200;
+    &-white {
+      @apply bg-clr-white text-clr-dark-gray hover:bg-clr-light-peach hover:text-clr-white;
+    }
+    &-peach {
+      @apply bg-clr-peach text-clr-white hover:bg-clr-light-peach;
+    }
+  }
 }

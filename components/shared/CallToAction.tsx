@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
-import Link from "next/link";
-import Button from "../ui/Button";
+import { useRouter } from "next/navigation";
 
 const CallToAction = () => {
+  const router = useRouter();
   return (
     <section>
       <div className="relative before:absolute before:bottom-[-1px] before:left-0 before:right-0 before:top-2/4 before:bg-clr-black md:before:top-3/4">
@@ -31,9 +32,13 @@ const CallToAction = () => {
                   out how our expertise can help your business grow.
                 </p>
               </div>
-              <Link href="/contact">
-                <Button color="white">Get in touch</Button>
-              </Link>
+              <button
+                type="button"
+                onClick={() => router.push("/contact")}
+                className="btn btn-white"
+              >
+                Get in touch
+              </button>
             </div>
           </div>
         </div>

@@ -12,10 +12,18 @@ export const metadata: Metadata = {
 
 export default function OurCompany() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <AboutHeader />
+      <div
+        aria-hidden="true"
+        className="background-leaf before:bottom-[-17.125rem] before:left-[-10.313rem]"
+      ></div>
       <AboutCard category="talent" />
       <Countries />
+      <div
+        aria-hidden="true"
+        className="background-leaf before:bottom-[-15.875rem] before:right-[-35rem]"
+      ></div>
       <AboutCard category="realDeal" reverse={true} />
       <CallToAction />
     </main>

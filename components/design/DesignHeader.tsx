@@ -33,7 +33,6 @@ const DesignHeader = ({ category }: CategoryT) => {
   return (
     <header>
       <div className="mb-24 flex justify-center sm:mx-6 md:mx-10 md:mb-[7.5rem] lg:mb-40">
-        <div className="relative before:absolute before:bottom-0 before:left-[-10.313rem] before:top-2/4 before:z-[-1] before:hidden before:h-[594px] before:w-[1006px] before:bg-leaf before:lg:block"></div>
         <div className="relative w-full max-w-1110 overflow-hidden bg-clr-peach px-6 py-[6.563rem] sm:rounded-2xl sm:py-16 ">
           <picture>
             <source

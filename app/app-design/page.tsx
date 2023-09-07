@@ -14,6 +14,10 @@ export default function AppDesign() {
   return (
     <main>
       <DesignHeader category="appDesign" />
+      <div
+        aria-hidden="true"
+        className="background-leaf before:bottom-[-19.125rem] before:left-[-10.313rem]"
+      ></div>
       <section>
         <div className="card-container">
           <div className="card-grid">
